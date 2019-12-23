@@ -3,6 +3,7 @@
  */
 public class Main {
     public static void main(String[] args) {
-        System.out.println("maven project");
+        System.out.println("Hello world Sergey");
+        System.out.println(args[0]);
     }
 }
