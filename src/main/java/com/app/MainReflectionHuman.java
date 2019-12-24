@@ -14,9 +14,9 @@ import java.util.Arrays;
 public class MainReflectionHuman {
     public static void main(String[] args) throws NoSuchFieldException, IllegalAccessException {
         Class mClassObject = Human.class;
-        Field[] fields = mClassObject.getDeclaredFields();
         Human human = new Human("Sergey", 35);
         System.out.println(human);
+
         Field field = mClassObject.getField("hobby");
         field.set(human, "football");
         System.out.println(human);
