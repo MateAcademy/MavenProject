@@ -3,9 +3,10 @@ package com.app;
 /**
  * @author Sergey Klunniy
  */
-public class Human {
+public  class Human extends H{
     private String name;
     private int age;
+    public String hobby;
 
     public Human(String name, int age) {
         this.name = name;
