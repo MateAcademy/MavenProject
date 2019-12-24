@@ -18,6 +18,7 @@ public  class Human extends H{
         return "Human{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
+                ", hobby='" + hobby + '\'' +
                 '}';
     }
 }
