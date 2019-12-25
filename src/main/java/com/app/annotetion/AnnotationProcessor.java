@@ -1,5 +1,7 @@
 package com.app.annotetion;
 
+import java.lang.reflect.Method;
+
 /**
  * @author Sergey Klunniy
  */
@@ -12,8 +14,12 @@ public class AnnotationProcessor {
 
     static void inspectService(Class<?> service) {
         if (service.isAnnotationPresent(Service.class)) {
-            Service ann = service.getAnnotation(Service.class);
-            System.out.println(ann.name());
+            Method[] methods = service.getDeclaredMethods();
+            for (Method method : methods) {
+                if (method.isAnnotationPresent(Init.class)) {
+                    System.out.println("я нашел метод: " + method.getName() + " с аннотацией Init");
+                }
+            }
         } else {
             System.out.println("Не найдено");
         }
