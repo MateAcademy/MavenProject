@@ -1,4 +1,4 @@
-package com.app.annotetion;
+package com.app.annotation;
 
 /**
  * @author Sergey Klunniy
