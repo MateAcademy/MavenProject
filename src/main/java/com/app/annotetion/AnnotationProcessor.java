@@ -14,10 +14,10 @@ public class AnnotationProcessor {
 
     static void inspectService(Class<?> service) {
         if (service.isAnnotationPresent(Service.class)) {
-            Method[] methods = service.getDeclaredMethods();
+            Method[] methods = service.getMethods();
             for (Method method : methods) {
                 if (method.isAnnotationPresent(Init.class)) {
-                    System.out.println("я нашел метод: " + method.getName() + " с аннотацией Init");
+                    System.out.println("я нашел метод: " + method.getName() + " с аннотацией Init ");
                 }
             }
         } else {
