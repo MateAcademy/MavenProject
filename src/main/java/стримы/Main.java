@@ -18,8 +18,10 @@ public class Main {
         names.add("Sergei");
         names.add("Kata");
 
-        names.stream().forEach(x-> System.out.println(x));
-        names.stream().forEach(System.out::println);
-        names.forEach(x-> System.out.println(x));
+//        names.stream().forEach(x-> System.out.println(x));
+//        names.stream().forEach(System.out::println);
+//        names.forEach(x-> System.out.println(x));
+
+        names.stream().filter(x -> x.startsWith("A")).forEach(x-> System.out.println(x));
     }
 }
