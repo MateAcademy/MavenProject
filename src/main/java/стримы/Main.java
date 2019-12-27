@@ -19,6 +19,6 @@ public class Main {
         names.add("Kata");
 
         names.stream().forEach(x-> System.out.println(x));
-
+        names.stream().forEach(System.out::println);
     }
 }
