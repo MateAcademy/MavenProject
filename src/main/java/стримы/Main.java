@@ -20,5 +20,6 @@ public class Main {
 
         names.stream().forEach(x-> System.out.println(x));
         names.stream().forEach(System.out::println);
+        names.forEach(x-> System.out.println(x));
     }
 }
