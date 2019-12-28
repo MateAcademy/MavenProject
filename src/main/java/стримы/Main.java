@@ -22,10 +22,9 @@ public class Main {
 //        names.stream().forEach(System.out::println);
 //        names.forEach(x-> System.out.println(x));
 
-        names.stream().filter(x -> x.startsWith("A")).forEach(x-> System.out.println(x));
+//        names.stream().filter(x -> x.startsWith("A")).forEach(x-> System.out.println(x));
 
-        for (int i = 0; i < 10; i++) {
-
-        }
+       Stream.generate( () -> 10).limit(5).forEach(System.out::println);
+       Stream.iterate( 1, x -> x + 10);
     }
 }
