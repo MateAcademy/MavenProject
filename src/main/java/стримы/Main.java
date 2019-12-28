@@ -23,5 +23,9 @@ public class Main {
 //        names.forEach(x-> System.out.println(x));
 
         names.stream().filter(x -> x.startsWith("A")).forEach(x-> System.out.println(x));
+
+        for (int i = 0; i < 10; i++) {
+
+        }
     }
 }
