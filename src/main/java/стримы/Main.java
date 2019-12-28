@@ -18,13 +18,7 @@ public class Main {
         names.add("Sergei");
         names.add("Kata");
 
-//        names.stream().forEach(x-> System.out.println(x));
-//        names.stream().forEach(System.out::println);
-//        names.forEach(x-> System.out.println(x));
+        assert names.get(0).equals("German") : "нету";
 
-//        names.stream().filter(x -> x.startsWith("A")).forEach(x-> System.out.println(x));
-
-       Stream.generate( () -> 10).limit(5).forEach(System.out::println);
-       Stream.iterate( 1, x -> x + 10);
     }
 }
