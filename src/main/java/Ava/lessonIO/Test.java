@@ -12,7 +12,10 @@ public class Test {
         File file = new File("src/Main/java/Ava/Doc1.txt");
         System.out.println(file.exists());
         System.out.println(file.createNewFile());
-        file.delete();
 
+        System.out.println(file.getName());
+        System.out.println(file.getAbsolutePath());
+
+//        file.delete();
     }
 }
