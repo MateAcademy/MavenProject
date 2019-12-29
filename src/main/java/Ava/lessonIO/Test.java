@@ -10,7 +10,9 @@ public class Test {
     public static void main(String[] args) throws IOException {
 
         File file = new File("src/Main/java/Ava/Doc1.txt");
+        System.out.println(file.exists());
         System.out.println(file.createNewFile());
+        file.delete();
 
     }
 }
