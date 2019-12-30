@@ -13,6 +13,5 @@ public class SystemINDemo {
             double i  = scanner.nextDouble();
             System.out.println(i);
         }
-
     }
 }
