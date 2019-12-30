@@ -1,4 +1,4 @@
-package Ava.lessonIO;
+package Ava;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -7,7 +7,7 @@ import java.nio.file.Paths;
 /**
  * @author Sergey Klunniy
  */
-public class SystemIn2 {
+public class SystemIN2 {
     public static void main(String[] args) throws IOException {
 
         while (true) {
