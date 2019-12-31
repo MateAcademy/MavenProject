@@ -1,16 +1,30 @@
 package Ava3;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 
 /**
  * @author Sergey Klunniy
  */
 public class Main {
     public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        String s = bufferedReader.readLine();
-        System.out.println(s);
+        File file = new File("temp.txt");
+
+        FileWriter fileWriter = new FileWriter(file);
+//        fileWriter.write("Hello\n");
+//        fileWriter.write("Sergei\n");
+//        fileWriter.flush();
+//        fileWriter.close();
+
+        FileReader fileReader = new FileReader(file);
+        char[] chars = new char[21];
+        fileReader.read(chars);
+        System.out.println(chars);
+
+        BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+        bufferedWriter.write("Tolik");
+        bufferedWriter.newLine();
+        bufferedWriter.write("Tolik");
+        bufferedWriter.flush();
+
     }
 }
