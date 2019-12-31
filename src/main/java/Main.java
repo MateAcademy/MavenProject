@@ -16,9 +16,8 @@ public class Main {
 
         for (String s : list) {
             String newStr = str + "\\" + s;
-            System.out.println("dir " + new File(newStr).isDirectory());
-            System.out.println("file " + new File(newStr).isFile());
-            System.out.println();
+            boolean rez  = new File(newStr).delete();
+
         }
     }
 }
