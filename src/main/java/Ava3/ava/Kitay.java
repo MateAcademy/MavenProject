@@ -1,23 +1,9 @@
 package Ava3.ava;
 
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.File;
 
-/**
- * @author Sergey Klunniy
- */
 public class Kitay {
     public static void main(String[] args) {
-        InputStreamReader inputStreamReader;
-        try {
-                inputStreamReader = new InputStreamReader(System.in);
-                int arr = inputStreamReader.read();
-                    System.out.println((char)arr);
-
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
+        File file = new File("temp.txt");
     }
 }
