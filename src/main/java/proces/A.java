@@ -1,5 +1,6 @@
 package proces;
 
+import javax.swing.text.html.Option;
 import java.io.Reader;
 import java.util.Optional;
 
@@ -9,6 +10,7 @@ import java.util.Optional;
 public class A {
     public static void main(String[] args) {
 
+        System.out.println(printName().orElse("Sergei"));
     }
 
     public Optional<A> getA() {
@@ -17,5 +19,9 @@ public class A {
         } else {
             return Optional.of(new A());
         }
+    }
+
+    private static Optional<String> printName() {
+        return Optional.empty();
     }
 }
