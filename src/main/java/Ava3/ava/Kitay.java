@@ -1,20 +1,21 @@
 package Ava3.ava;
 
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 /**
  * @author Sergey Klunniy
  */
 public class Kitay {
     public static void main(String[] args) {
-        int byteInt;
+        InputStreamReader inputStreamReader;
         try {
-                while (true) {
-                    byteInt = System.in.read();
-                    System.out.println(byteInt);
-                }
+                inputStreamReader = new InputStreamReader(System.in);
+                int arr = inputStreamReader.read();
+                    System.out.println((char)arr);
 
-        } catch (IOException e) {
+
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
