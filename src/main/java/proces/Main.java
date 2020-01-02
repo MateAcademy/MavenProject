@@ -9,10 +9,14 @@ import java.util.Optional;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        String s = bufferedReader.readLine();
-        System.out.println(s);
-
+        File file = new File("D:\\projectsJAVA\\MavenProject\\src\\Doc1.txt");
+        try(FileReader fileReader = new FileReader(file);
+            BufferedReader bufferedReader = new BufferedReader(fileReader)
+        ) {
+            String line = null;
+            while ((line = bufferedReader.readLine()) != null) {
+                System.out.println(line);
+            }
+        }
     }
 }
